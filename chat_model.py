@@ -11,8 +11,8 @@ api_key=os.getenv("HUGGINGFACEHUB_API_TOKEN")
 llm =HuggingFaceEndpoint(
     repo_id = "tiiuae/falcon-7b-instruct",
     task = "Question-answering",
-    temperature = 0.59
-    # huggingfacehub_api_token = api_key,
+    temperature = 0.59,
+    huggingfacehub_api_token = api_key,
     # max_new_tokens = 256
 )
 
